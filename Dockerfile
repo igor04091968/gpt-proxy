@@ -6,7 +6,7 @@ WORKDIR /app
 
 # Устанавливаем cron и сразу же очищаем кэш apt в одном слое
 RUN apt-get update && \
-    apt-get install -y cron && \
+    apt-get install -y cron jq && \
     rm -rf /var/lib/apt/lists/*
 
 # Копируем package.json и package-lock.json
