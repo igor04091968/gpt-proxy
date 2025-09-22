@@ -25,4 +25,4 @@
  EXPOSE 3000                                                           
  # Устанавливаем точку входа                                           
  ENTRYPOINT ["/app/entrypoint.sh"]
- │    ENTRYPOINT ["/app/entrypoint.sh"] 
+ 
