@@ -20,7 +20,7 @@ async function fallbackToHuggingFace(messages) {
     }
     const prompt = lastUserMessage.content;
 
-    const HF_API_URL = 'https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.2';
+    const HF_API_URL = 'https://api-inference.huggingface.co/models/distilgpt2';
 
     const response = await axios.post(
         HF_API_URL,
