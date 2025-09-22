@@ -7,7 +7,7 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 app.post('/gpt4', async (req, res) => {
   try {
-    const { messages, model = 'gpt-4' } = req.body;
+    const { messages, model = 'gpt-3.5-turbo' } = req.body;
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       { model, messages },
